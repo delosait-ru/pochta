@@ -29,20 +29,23 @@
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -ms-flex-preferred-size: 85%;
+  flex-basis: 85%;
 }
 
 .logo-top__img {
-  -ms-flex-preferred-size: 30%;
-  flex-basis: 30%;
+  -ms-flex-preferred-size: 15%;
+  flex-basis: 15%;
+  display: inline-block;
 }
 
 .logo-top__title {
   font-size: 40px;
   font-weight: 700;
   color: #001e45;
-  -ms-flex-preferred-size: 70%;
-  flex-basis: 70%;
-  margin-left: 100px;
+  -ms-flex-preferred-size: 75%;
+  flex-basis: 75%;
+  margin-left: 10px;
   margin-right: 10px;
 }
 
@@ -83,6 +86,11 @@
   max-height: 38px;
 }
 
+@media only screen and (max-width: 848px) {
+  .logo-top__title {
+    font-size: 30px;
+  }
+}
 @media only screen and (max-width: 670px) {
   .logo-top__img {
     margin-right: 15px;
